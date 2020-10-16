@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de libros</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body{
+          display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr minmax(400px, 1100px) 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav nav nav"
+    ". content ."
+    "foot foot foot";
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: content ;
+            display: grid;
+            justify-content: center;
+            grid-template-rows: auto;
+        }
+        h1 {
+         color:rgb(49, 12, 15);
+         font-style: italic; 
+         font-weight: 600;
+         text-align: center;}
+         h2 {
+         color:rgb(179, 58, 68);
+         font-style: italic; 
+         font-weight: 400;
+         text-align: left;}
+         h3 {
+         color:rgb(179, 58, 68);
+         font-style: italic; 
+         font-weight: 400;
+         text-align: left;}
+         ol {
+            background-color:lavenderblush;
+        }
+        p {
+         background-color: rgb(236, 203, 236);}
+         #miImagen {
+         margin: 20px;
+         padding: 10px;
+         width: 600px;
+         border: solid 4px;
+         border-color: rgb(184, 107, 161);}
+         
+        footer{
+            grid-area: foot;
+            background-color:darkgrey;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <h1>Blog de libros</h1>
+        <p>Aquí encontrarás reseñas y listas de los mejores libros</p>
+        <img id="miImagen" src="libros.jpg"> 
+        <h2>Reseña corta de Frankenstein </h2>
+        <p>A pesar de que la figura del monstruo de Frankenstein forma parte ya del imaginario colectivo, todas esas interpretaciones que han protagonizado series y películas tienen su base en la obra de Mary Shelley. Lo interesante y no menos sorprendente es que esta historia difiere en gran medida de la típica imagen que tenemos de Frankenstein como un ser gigantesco verde, lleno de costuras y un par de tornillos a ambos lados de la cabeza. Y es que, para empezar, llamamos Frankenstein al monstruo, mientras que este es en realidad el apellido de su creador y el ser resultante no tiene nombre conocido. Además, en el libro apenas se describe físicamente al monstruo: sabemos que está hecho de retales y que cuenta con un tamaño superior al de un ser humano, pero poco más.
+
+          La historia de “Frankenstein o el moderno Prometeo” es una obra romántica bastante más profunda que el mito llevado a las pantallas de todos los tamaños. Es una novela epistolar en la que toda la trama se cuenta en primera persona aunque, por supuesto, las voces cambian: primero estamos a bordo de un barco en dirección al ártico y habla el capitán, pero luego Víctor Frankenstein toma la palabra, más adelante el monstruo y el resto de protagonistas que mandan cartas a Frankenstein .
+          
+          Víctor Frankenstein es un hombre afortunado que crece en el seno de una familia acomodada en Suiza. Su padre es justo y virtuoso y su madre, delicada y elegante. Son tan bondadosos que aceptan acoger en su familia a una niña desdichada y huérfana (de origen noble, pero arruinada). Sin embargo, la ambición y sagacidad de Frankenstein le llevan a viajar a Inglaterra donde estudia filosofía natural, química y demás ciencias. Siendo un estudiante brillante, se plantea lograr algo prohibido pero a la vez imposible para los hombres: crear vida. Esta locura le lleva a fabricar al monstruo y después abandonarlo a su suerte. El ser se convertirá en el segundo gran protagonista de la novela.
+          
+          A partir de ese momento, creador y creado tendrán encontronazos y ocurrirá todo tipo de desgracias que entran en el marco de una historia de terror. Sin embargo, no es la sangre lo que prima en la novela – de hecho, su presencia es casi anecdótica -, sino que, al estar siempre escrita en primera persona, esto saca a relucir los dilemas de cada personaje. Tras leer completa la novela, se observa el hecho de que tanto creador como creado sufren los mismos problemas de fondo y estos son los que caracterizan las obras románticas.</p>
+        <h3>5 Razones por las cuales leer</h3>
+        <p>Si no te gusta leer es porque no has encontrado el libro exacto para ti. Te recomiendo que comiences a leer historias que te gusten y te apasionen, una buena opción es la ciencia ficción. Así podrás transportarte a un mundo totalmente diferente. ¡Haz que la lectura sea un hobbie en tu vida!</p>
+
+        <ul class= "navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-item">1.-Previene la pérdida de memoria: te ayuda a retrasar la aparición de alguna enfermedad en la mente.</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-item"></a>2.- Mejora tu escritura: Aprendes el uso y la escritura correcta de algunas palabras.  Aumentará tu vocabulario, así como también mejorará tu comunicación</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-item"></a>3.- Evita el estrés: Al concentrarte en el libro y la historia que lees, dejas de lado los problemas que tienes y te transportas a otro mundo.</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-item"></a>4.- Estimula la actividad cerebral: Al leer nuestro cerebro piensa, ordena e interrelaciona conceptos. De esta manera ejercitas tu mente.</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-item"></a>5.-No es costoso: Ahora con el uso del internet puedes acceder a muchos libros que son totalmente gratuitos. </a>
+            </li>
+            </ul>
+            <h3>Tabla de los 5 mejores libros del mes</h3>
+       <table class="table conclusion">
+            <!-- tr table row
+                th table header
+                td table data  -->
+                <tr>
+                    <th>Nombre del libro</th>
+                    <th>Autor</th>
+                </tr> 
+                <tr>
+                    <td>Crimen y Castigo</td>
+                    <td>Fiódor Dostoyevski</td>
+                </tr>
+                <tr>
+                    <td>Orgullo y Prejuicio</td>
+                    <td>Jane Austen</td>
+                </tr>
+                <tr>
+                    <td>El Principito</td>
+                    <td>Antoine de Saint-Exupéry</td>
+                </tr>
+                    <td>El Gran Gatsby</td>
+                    <td>F.Scott Fitzgerald</td>
+                </tr>
+              </tr>
+              <td>1984</td>
+              <td>George Orwell</td>
+          </tr>
+        </table>
+        <ol>
+            <li>5 claves para motivar a los niños a leer</li>
+            <ul>
+                <li>Inspira con el ejemplo</li>
+                <li>Establece un vínculo positivo con la lectura</li>
+                <li>Permite que elijan los libros que quieren leer</li>
+                <li>Deja que marquen su propio ritmo</li>
+                <li>Crea un rincón literario en casa</li>
+
+            </ul>
+            <li>7 beneficicos de leer en la cama antes de dormir</li>
+            <ul>
+                <li>Ayuda a desconectar del día a día.</li>
+                <li>Excelente vía contra el aburrimiento.</li>
+                <li>Potencia la relajación y ayuda a conciliar el sueño.</li>
+                <li>Combate el insomnio.</li>
+                <li>Reduce el estrés.</li>
+                <li>Aumenta la concentración, activa la memoria y ayuda a soñar.</li>
+                <li>Ayuda a dormir mejor</li>
+
+            </ul>
+            
+
+        </ol>
+         <p>Regístrate aquí abajo para poder recibir más noticias </p> 
+            <form action="">
+              Nombre:
+              <input type="text" />
+              Apellido:
+              <input type="text" />
+              Contraseña:
+              <input type="password" />
+              <button type="submit">Enviar</button>
+            </form>
+    </main>
+    <footer>
+        <h2>Contacto</h2>
+        <p>Teléfono: 123456</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html
