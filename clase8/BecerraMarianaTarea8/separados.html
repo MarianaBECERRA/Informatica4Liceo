@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos independientes</title>
+   
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        #grafico1{
+            width: 1250 px;
+        }
+        #grafico2{
+            width: 1250 px;
+        }
+        #grafico3{
+            width: 1250 px;
+        }
+    </style>    
+</head>
+<body>
+    <h1>Primera ecuación</h1>
+    <p> $$y = 2x -4$$</p>
+    <div id="grafico1"></div>
+
+    <h1>Seconda ecuación</h1>
+    <p> $$y = 6x^2 -3x -8$$</p>
+    <div id="grafico2"></div>
+
+    <h1>Tercera ecuación</h1>
+    <p> $$y = \sin(x)$$</p>
+    <div id="grafico3"></div>
+        
+        <script src="separados.js"></script>
+</body>
+</html>
